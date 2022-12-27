@@ -13,7 +13,7 @@ def main():
     cv=vect.transform(data).toarray()
     prediction=model_nb.predict(cv)
     result=prediction[0]
-    if result==Good:
+    if result=='Good':
       st.success("GOOD URL")
     else:
       st.error("Phishing URL")
